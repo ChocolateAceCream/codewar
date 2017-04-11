@@ -1,2 +1,13 @@
-a= [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-p '(%d%d%d) %d%d%d-%d%d%d%d' % a
+def valid_parentheses(string)
+  result = 0
+  string.each_char do |i|
+     result-=1 if i=')'
+     result+=1 if i='('
+     return false if result < 0
+  end
+  return false if result > 0
+  return true
+  #your code here
+end
+
+p valid_parentheses("  (")
