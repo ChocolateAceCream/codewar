@@ -1,3 +1,8 @@
+a=[1,2,3]
+b=[4,5,6]
+
+p a+b
+
 def next_bigger(n)
   p n
   n = n.to_s.chars.map(&:to_i)
