@@ -1,1 +1,5 @@
-p [1,3,4,5].map {|i| i*i}
+(0..100).each do |i|
+    if i %3 ==0
+        p i.to_s(2)
+    end
+end
