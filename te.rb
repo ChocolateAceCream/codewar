@@ -1,5 +1,5 @@
-(0..100).each do |i|
-    if i %3 ==0
-        p i.to_s(2)
-    end
+(1..4).each do |i|
+ p i
 end
+
+p (1..4).count
